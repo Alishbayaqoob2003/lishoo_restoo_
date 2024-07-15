@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>/* Reset default margin and padding */
+            body, html {
+              margin: 0;
+              padding: 0;
+            }
+            
+            /* Centering the social icons */
+            .social-icons {
+              display: flex;
+              flex-direction: column; /* Display icons in a column */
+              align-items: center; /* Center align icons horizontally */
+              margin-top: 20px; /* Adjust as needed */
+            }
+            
+            /* Styling for each social icon link */
+            .social-icon {
+              display: inline-block;
+              margin: 10px 0; /* Adjust spacing between icons vertically */
+              font-size: 20px; /* Adjust icon size */
+              color: #333; /* Adjust icon color */
+              text-decoration: none; /* Remove underline from links */
+            }
+            
+            /* Hover effect for social icons */
+            .social-icon:hover {
+              color: #007bff; /* Change color on hover */
+            }
+            
+            /* Facebook icon */
+            .social-icon.facebook:hover {
+              color: #3b5998; /* Facebook blue */
+            }
+            
+            /* Twitter icon */
+            .social-icon.twitter:hover {
+              color: #1da1f2; /* Twitter blue */
+            }
+            
+            /* Instagram icon */
+            .social-icon.instagram:hover {
+              color: #e1306c; /* Instagram pink */
+            }
+            
+            /* WhatsApp icon */
+            .social-icon.whatsapp:hover {
+              color: #25d366; /* WhatsApp green */
+            }
+            
+            /* Font Awesome icons */
+            .fa {
+              font-size: inherit;
+            }
+            .social-links h2{
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .social-links img{
+        padding-bottom: 25px;
+    }
+    .social-icons{
+        /* display: flex;
+        gap: 3rem; */
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        color: #777777;
+    }
+    .social-icons a{
+        /* font-size: 18px; */
+        /* background: #ffffff; */
+        /* box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+        padding: 0.4rem 1rem 0.4rem 1rem;
+        border-radius: 3px;
+        color: #82074a; */
+        /* margin-right: 18px; */
+        color: #777777;
+    }
+    .social-icons a:hover{
+        color: #000;
+    }
+    .social-icons a i{
+        box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+        padding: 0.4rem 1rem 0.4rem 1rem;
+        border-radius: 3px;
+        color: #ede4e9;
+        font-size: 16px;
+        margin-right: 12px;
+    }
+    li{
+        list-style: none;
+    }
+    .useful-link h2{
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .useful-link img{
+        padding-bottom: 15px;
+    }
+    .use-links{
+        line-height: 32px;
+    }
+    .use-links li i{
+        font-size: 14px;
+        padding-right: 8px;
+        color: #898989;
+    }
+    .use-links li a{
+        color: #303030;
+        font-size: 15px;
+        font-weight: 500;
+        color: #777777;
+    }
+    .use-links li a:hover{
+        color: #000;
+    }
+    .address h2{
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .address img{
+        padding-bottom: 15px;
+    }
+    .address-links li a{
+        color: #303030;
+        font-size: 15px;
+        font-weight: 500;
+        color: #777777;
+    
+    }
+    .address-links li i{
+        font-size: 16px;
+        padding-right: 8px;
+        color: #f4edf1;
+    
+    }
+    .address-links li i:nth-child(1){
+        padding-top: 9px;
+    }
+    .address-links .address1{
+        font-weight: 500;
+        font-size: 15px;
+        display: flex;
+    }
+    .address-links{
+            line-height: 32px;
+            color: #777777;
+    }
+    .copy-right-sec{
+        padding: 1.8rem;
+        background: #fbf9fa;
+        color: #fff;
+        text-align: center;
+    }
+    .copy-right-sec a{
+        color: #fcd462;
+        font-weight: 500;
+    }
+    a{
+      text-decoration:none;
+    }
+      
+    
+    
+        
+        
+    
+            
+    
+    
+          
+          
+         
+          
+         
+         
+          
+          
+          </style>
+        
+        <style>
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        .footer-section {
+          background: #151414;
+          position: relative;
+        }
+        .footer-cta {
+          border-bottom: 1px solid #373636;
+        }
+        .single-cta i {
+          color: #ff5e14;
+          font-size: 30px;
+          float: left;
+          margin-top: 8px;
+        }
+        .cta-text {
+          padding-left: 15px;
+          display: inline-block;
+        }
+        .cta-text h4 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 2px;
+        }
+        .cta-text span {
+          color: #757575;
+          font-size: 15px;
+        }
+        .footer-content {
+          position: relative;
+          z-index: 2;
+        }
+        .footer-pattern img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 330px;
+          background-size: cover;
+          background-position: 100% 100%;
+        }
+        .footer-logo {
+          margin-bottom: 30px;
+        }
+        .footer-logo img {
+            max-width: 200px;
+        }
+        .footer-text p {
+          margin-bottom: 14px;
+          font-size: 14px;
+              color: #7e7e7e;
+          line-height: 28px;
+        }
+        .footer-social-icon span {
+          color: #fff;
+          display: block;
+          font-size: 20px;
+          font-weight: 700;
+          font-family: 'Poppins', sans-serif;
+          margin-bottom: 20px;
+        }
+        .footer-social-icon a {
+          color: #fff;
+          font-size: 16px;
+          margin-right: 15px;
+        }
+        .footer-social-icon i {
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          line-height: 38px;
+          border-radius: 50%;
+        }
+        .facebook-bg{
+          background: #3B5998;
+        }
+        .twitter-bg{
+          background: #55ACEE;
+        }
+        .google-bg{
+          background: #DD4B39;
+        }
+        .footer-widget-heading h3 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 40px;
+          position: relative;
+        }
+        .footer-widget-heading h3::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          height: 2px;
+          width: 50px;
+          background: #ff5e14;
+        }
+        .footer-widget ul li {
+          display: inline-block;
+          float: left;
+          width: 50%;
+          margin-bottom: 12px;
+        }
+        .footer-widget ul li a:hover{
+          color: #ff5e14;
+        }
+        .footer-widget ul li a {
+          color: #878787;
+          text-transform: capitalize;
+        }
+        .subscribe-form {
+          position: relative;
+          overflow: hidden;
+        }
+        .subscribe-form input {
+          width: 100%;
+          padding: 14px 28px;
+          background: #2E2E2E;
+          border: 1px solid #2E2E2E;
+          color: #fff;
+        }
+        .subscribe-form button {
+            position: absolute;
+            right: 0;
+            background: #ff5e14;
+            padding: 13px 20px;
+            border: 1px solid #ff5e14;
+            top: 0;
+        }
+        .subscribe-form button i {
+          color: #fff;
+          font-size: 22px;
+          transform: rotate(-6deg);
+        }
+        .copyright-area{
+          background: #202020;
+          padding: 25px 0;
+        }
+        .copyright-text p {
+          margin: 0;
+          font-size: 14px;
+          color: #878787;
+        }
+        .copyright-text p a{
+          color: #ff5e14;
+        }
+        .footer-menu li {
+          display: inline-block;
+          margin-left: 20px;
+        }
+        .footer-menu li:hover a{
+          color: #ff5e14;
+        }
+        .footer-menu li a {
+          font-size: 14px;
+          color: #878787;
+        }</style>
+        
+    
+        <meta charset="utf-8">
+        <title>LISHOO-Restaurant</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">lishoo<span>restoo</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="feature.html" class="nav-item nav-link active">Feature</a>
+        
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        
+                        <a href="booking.html" class="nav-item nav-link">Booking</a>
+                 
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+         
+        
+        
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>FEATURES</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="">Home</a>
+                        <a href="">Features</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+
+        <!-- Feature Start -->
+        <div class="feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="section-header">
+                            <p>Features</p>
+                            
+                        </div>
+                        <div class="feature-text">
+                            <div class="feature-img">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="img/feature-1.jpg" alt="Image">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="img/feature-2.jpg" alt="Image">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="img/feature-3.jpg" alt="Image">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="img/feature-4.jpg" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                Good Food And Great Vibes
+                            </p>
+                            <a class="btn custom-btn" href="">Book A Table</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-vegetable"></i>
+                                    <h3>Natural ingredients</h3>
+                                    <p>
+                                        Healthy Restaurant Taglines. Real. Fresh. Food. Healthy and modern. From farm to plate. Directly from mother earth. Eat natural – eat organic.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-medal"></i>
+                                    <h3>Best quality products</h3>
+                                    <p>
+                                       best qualities products avilable 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-meat"></i>
+                                    <h3>fresh fast food</h3>
+                                    <p>
+                                        fresh  fast food avalible 
+                                    </p>  
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="flaticon-courier"></i>
+                                    <h3>Fastest door delivery</h3>
+                                    <p>
+                                        fastest food delevery , 24hr delevery available
+                                    </p>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+
+        <!-- Footer Start -->
+      
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>Mirpur azad kashmir</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>+923474508402</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <p> <a href="mailto:alishbayaqoob2003@gmail.com"
+                                        title="glorythemes">alishbayaqoob2003@gmail.com</a></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html">
+                                        <img style="border-radius: 20%;" src="img/lishoo resturent logo.PNG"  alt="logoo"></a>
+                                </div>
+                                <div class="footer-text">
+                                 
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./About.html">About</a></li>
+                                    <li><a href="./feature.html">Features</a></li>
+                                    <li><a href="./Menu.html">Menu</a></li>
+                                    <li><a href="./Booking.html">Booking</a></li>
+                                    <li><a href="./contact.html">Contact us</a></li>
+                                    
+                            
+                                    
+                                </ul>
+
+                            </div> 
+                        </div>
+                        
+                        <div class="footer-widget-heading">
+                            <h3>Follow us</h3>
+                           
+                      
+                      
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/lishoo_restoo?igsh=MWh4NDR3a2xycDc=" target="_blank" class="social-icon instagram">
+                                  <i class="fab fa-instagram"></i> Instagram
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=61561985914413&mibextid=ZbWKwL" target="_blank" class="social-icon facebook">
+                                  <i class="fab fa-facebook-f"></i> Facebook
+                                </a>
+                                <a
+                                 href="https://wa.me/923474508402?text=Hello,%20I%20have%20a%20question%20about%20your%20menu" target="_blank" class="social-icon whatsapp">
+                                 <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                                <!-- Add more social icons as needed -->
+                              </div>
+                          </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                   
+            <div class="footer-copyright">
+                <div class="container">
+                <div class="row">
+                <div class="col-md-12 text-center">
+                <p> Designed by Lishoo Team. All rights reserved.</p>
+                </div>
+                </div>
+                </div>
+                </div>
+        </footer>
+
+    
+                         
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

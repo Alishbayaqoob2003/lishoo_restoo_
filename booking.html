@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+   <meta charset="utf-8">
+        <title>LISHOO-Restaurant</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        .footer-section {
+          background: #151414;
+          position: relative;
+        }    
+        .footer-cta {
+          border-bottom: 1px solid #373636;
+        }
+        .single-cta i {
+          color: #ff5e14;
+          font-size: 30px;
+          float: left;
+          margin-top: 8px;
+        }
+        .cta-text {
+          padding-left: 15px;
+          display: inline-block;
+        }
+        .cta-text h4 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 2px;
+        }
+        .cta-text span {
+          color: #757575;
+          font-size: 15px;
+        }
+        .footer-content {
+          position: relative;
+          z-index: 2;
+        }
+        .footer-pattern img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 330px;
+          background-size: cover;
+          background-position: 100% 100%;
+        }
+        .footer-logo {
+          margin-bottom: 30px;
+        }
+        .footer-logo img {
+            max-width: 200px;
+        }
+        .footer-text p {
+          margin-bottom: 14px;
+          font-size: 14px;
+              color: #7e7e7e;
+          line-height: 28px;
+        }
+        .footer-social-icon span {
+          color: #fff;
+          display: block;
+          font-size: 20px;
+          font-weight: 700;
+          font-family: 'Poppins', sans-serif;
+          margin-bottom: 20px;
+        }
+        .footer-social-icon a {
+          color: #fff;
+          font-size: 16px;
+          margin-right: 15px;
+        }
+        .footer-social-icon i {
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          line-height: 38px;
+          border-radius: 50%;
+        }
+        .facebook-bg{
+          background: #3B5998;
+        }
+        .twitter-bg{
+          background: #55ACEE;
+        }
+        .google-bg{
+          background: #DD4B39;
+        }
+        .footer-widget-heading h3 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 40px;
+          position: relative;
+        }
+        .footer-widget-heading h3::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          height: 2px;
+          width: 50px;
+          background: #ff5e14;
+        }
+        .footer-widget ul li {
+          display: inline-block;
+          float: left;
+          width: 50%;
+          margin-bottom: 12px;
+        }
+        .footer-widget ul li a:hover{
+          color: #ff5e14;
+        }
+        .footer-widget ul li a {
+          color: #878787;
+          text-transform: capitalize;
+        }
+        .subscribe-form {
+          position: relative;
+          overflow: hidden;
+        }
+        .subscribe-form input {
+          width: 100%;
+          padding: 14px 28px;
+          background: #2E2E2E;
+          border: 1px solid #2E2E2E;
+          color: #fff;
+        }
+        .subscribe-form button {
+            position: absolute;
+            right: 0;
+            background: #ff5e14;
+            padding: 13px 20px;
+            border: 1px solid #ff5e14;
+            top: 0;
+        }
+        .subscribe-form button i {
+          color: #fff;
+          font-size: 22px;
+          transform: rotate(-6deg);
+        }
+        .copyright-area{
+          background: #202020;
+          padding: 25px 0;
+        }
+        .copyright-text p {
+          margin: 0;
+          font-size: 14px;
+          color: #878787;
+        }
+        .copyright-text p a{
+          color: #ff5e14;
+        }
+        .footer-menu li {
+          display: inline-block;
+          margin-left: 20px;
+        }
+        .footer-menu li:hover a{
+          color: #ff5e14;
+        }
+        .footer-menu li a {
+          font-size: 14px;
+          color: #878787;
+        }
+        /* Reset default margin and padding */
+            body, html {
+              margin: 0;
+              padding: 0;
+            }
+            
+            /* Centering the social icons */
+            .social-icons {
+              display: flex;
+              flex-direction: column; /* Display icons in a column */
+              align-items: center; /* Center align icons horizontally */
+              margin-top: 20px; /* Adjust as needed */
+            }
+            
+            /* Styling for each social icon link */
+            .social-icon {
+              display: inline-block;
+              margin: 10px 0; /* Adjust spacing between icons vertically */
+              font-size: 20px; /* Adjust icon size */
+              color: #333; /* Adjust icon color */
+              text-decoration: none; /* Remove underline from links */
+            }
+            
+            /* Hover effect for social icons */
+            .social-icon:hover {
+              color: #007bff; /* Change color on hover */
+            }
+            
+            /* Facebook icon */
+            .social-icon.facebook:hover {
+              color: #3b5998; /* Facebook blue */
+            }
+            
+            /* Twitter icon */
+            .social-icon.twitter:hover {
+              color: #1da1f2; /* Twitter blue */
+            }
+            
+            /* Instagram icon */
+            .social-icon.instagram:hover {
+              color: #e1306c; /* Instagram pink */
+            }
+            
+            /* WhatsApp icon */
+            .social-icon.whatsapp:hover {
+              color: #25d366; /* WhatsApp green */
+            }
+            
+            /* Font Awesome icons */
+            .fa {
+              font-size: inherit;
+            }
+            .social-links h2{
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .social-links img{
+        padding-bottom: 25px;
+    }
+    .social-icons{
+        /* display: flex;
+        gap: 3rem; */
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        color: #777777;
+    }
+    .social-icons a{
+        /* font-size: 18px; */
+        /* background: #ffffff; */
+        /* box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+        padding: 0.4rem 1rem 0.4rem 1rem;
+        border-radius: 3px;
+        color: #82074a; */
+        /* margin-right: 18px; */
+        color: #777777;
+    }
+    .social-icons a:hover{
+        color: #000;
+    }
+    .social-icons a i{
+        box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+        padding: 0.4rem 1rem 0.4rem 1rem;
+        border-radius: 3px;
+        color: #ede4e9;
+        font-size: 16px;
+        margin-right: 12px;
+    }
+    li{
+        list-style: none;
+    }
+    .useful-link h2{
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .useful-link img{
+        padding-bottom: 15px;
+    }
+    .use-links{
+        line-height: 32px;
+    }
+    .use-links li i{
+        font-size: 14px;
+        padding-right: 8px;
+        color: #898989;
+    }
+    .use-links li a{
+        color: #303030;
+        font-size: 15px;
+        font-weight: 500;
+        color: #777777;
+    }
+    .use-links li a:hover{
+        color: #000;
+    }
+    .address h2{
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .address img{
+        padding-bottom: 15px;
+    }
+    .address-links li a{
+        color: #303030;
+        font-size: 15px;
+        font-weight: 500;
+        color: #777777;
+    
+    }
+    .address-links li i{
+        font-size: 16px;
+        padding-right: 8px;
+        color: #f4edf1;
+    
+    }
+    .address-links li i:nth-child(1){
+        padding-top: 9px;
+    }
+    .address-links .address1{
+        font-weight: 500;
+        font-size: 15px;
+        display: flex;
+    }
+    .address-links{
+            line-height: 32px;
+            color: #777777;
+    }
+    .copy-right-sec{
+        padding: 1.8rem;
+        background: #fbf9fa;
+        color: #fff;
+        text-align: center;
+    }
+    .copy-right-sec a{
+        color: #fcd462;
+        font-weight: 500;
+    }
+    a{
+      text-decoration:none;
+    }
+      
+    
+    
+        
+        
+    
+            
+    
+    
+          
+          
+         
+          
+         
+         
+          
+          
+          </style>
+    </head>
+
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Lishoo <span>Restoo</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="feature.html" class="nav-item nav-link">Feature</a>
+                 
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        
+                        <a href="booking.html" class="nav-item nav-link active">Booking</a>
+                     
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+        
+        
+        <!-- Page Header Start -->
+        <div class="page-header mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Book A Table</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="./index.html">Home</a>
+                        <a href="./booking.html">Booking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+
+        <!-- Booking Start -->
+        <div class="booking">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="booking-content">
+                            <div class="section-header">
+                                <p>Book A Table</p>
+                                <h2>Book Your Table For Private Dinners & Happy Hours</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.</p>
+
+                            </div>
+                        </div>
+                    </div><br><br><br>
+                    <div class="col-lg-5">
+                        <div class="booking-form">
+                            <form id="bookingForm">
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required="required" />
+
+                                        
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="far fa-user"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+
+                                        <input type="email" id="email" name="email" class="form-control" 
+                                        placeholder="Email" required="required" />
+
+
+
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+
+                                    
+                                         <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Mobile" required="required" />
+
+
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group date" id="date" data-target-input="nearest">
+
+                                        <input type="text" id="bookingDate" name="bookingDate" class="form-control datetimepicker-input" 
+                                        placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
+
+                                     
+
+                                        <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="payment-method">Payment Method:</label>
+                                    <select class="form-control" id="payment_method" name="payment_method" onchange="handlePaymentMethodChange()" required>
+                                        <option value="">Select Payment Method</option>
+                                        <option value="credit_card">Credit Card</option>
+                                        <option value="jazz_cash">Jazz Cash</option>
+                                        <option value="easy_paisa">Easy Paisa</option>
+                                    </select>
+                                </div>
+                                
+                                <div id="credit-card-details" class="payment-method-details">
+                                    <div class="form-group">
+                                        <label for="card-number">Card Number:</label>
+                                        <input type="text" class="form-control" id="card-number" name="card_number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="card-expiry">Expiry Date:</label>
+                                        <input type="month" class="form-control" id="card-expiry" name="card_expiry">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="card-cvv">CVV:</label>
+                                        <input type="text" class="form-control" id="card-cvv" name="card_cvv">
+                                    </div>
+                                </div>
+                                
+                                <div id="jazz-cash-details" class="payment-method-details">
+                                    <div class="form-group">
+                                        <label for="jazz-cash-number">Jazz Cash Number:</label>
+                                        <input type="text" class="form-control" id="jazz-cash-number" name="jazz_cash_number" placeholder="+920000000000" pattern="[+0-9]{13}">
+                                    </div>
+                                </div>
+                                
+                                <div id="easy-paisa-details" class="payment-method-details">
+                                    <div class="form-group">
+                                        <label for="easy-paisa-number">Easy Paisa Number:</label>
+                                        <input type="text" class="form-control" id="easy-paisa-number" name="easy_paisa_number" placeholder="+920000000000" pattern="[+0-9]{13}">
+                                    </div>
+                                </div>
+                                
+                                <div class="control-group">
+                                    <div class="input-group time" id="time" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
+                                        <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <select class="custom-select form-control">
+                                            <option selected>Guest</option>
+                                            <option value="1">1 Guest</option>
+                                            <option value="2">2 Guest</option>
+                                            <option value="3">3 Guest</option>
+                                            <option value="4">4 Guest</option>
+                                            <option value="5">5 Guest</option>
+                                            <option value="6">6 Guest</option>
+                                            <option value="7">7 Guest</option>
+                                            <option value="8">8 Guest</option>
+                                            <option value="9">9 Guest</option>
+                                            <option value="10">10 Guest</option>
+                                        </select>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button id="submitButton" type="submit" class="btn custom-btn"
+                                 onclick="submitFormViaWhatsApp()">
+                                    Submit via WhatsApp &nbsp;
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
+                                     alt="WhatsApp" width="20" height="20">
+                                </button>
+                                
+                             
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking End -->
+        
+    
+        <!-- Footer Start -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>Mirpur azad kashmir</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>+923474508402</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <p> <a href="mailto:alishbayaqoob2003@gmail.com"
+                                        title="glorythemes">alishbayaqoob2003@gmail.com</a></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html">
+                                        <img style="border-radius: 20%;" src="img/lishoo resturent logo.PNG"  alt="logoo"></a>
+                                </div>
+                                <div class="footer-text">
+                                 
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./About.html">About</a></li>
+                                    <li><a href="./feature.html">Features</a></li>
+                                    <li><a href="./Menu.html">Menu</a></li>
+                                    <li><a href="./Booking.html">Booking</a></li>
+                                    <li><a href="./contact.html">Contact us</a></li>
+                                    
+                            
+                                    
+                                </ul>
+
+                            </div> 
+                        </div>
+                        
+                        <div class="footer-widget-heading">
+                            <h3>Follow us</h3>
+                           
+
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/lishoo_restoo?igsh=MWh4NDR3a2xycDc=" target="_blank" class="social-icon instagram">
+                                  <i class="fab fa-instagram"></i> Instagram
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=61561985914413&mibextid=ZbWKwL" target="_blank" class="social-icon facebook">
+                                  <i class="fab fa-facebook-f"></i> Facebook
+                                </a>
+                                <a
+                                 href="https://wa.me/923474508402?text=Hello,%20I%20have%20a%20question%20about%20your%20menu" target="_blank" class="social-icon whatsapp">
+                                 <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                                <!-- Add more social icons as needed -->
+                              </div>
+                         
+                          </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                   
+            <div class="footer-copyright">
+                <div class="container">
+                <div class="row">
+                <div class="col-md-12 text-center">
+                <p> Designed by Lishoo Team. All rights reserved.</p>
+                </div>
+                </div>
+                </div>
+                </div>
+        </footer>
+        <script>
+            function handlePaymentMethodChange() {
+                const paymentMethod = document.getElementById('payment_method').value;
+        
+                // Hide all payment details sections
+                document.querySelectorAll('.payment-method-details').forEach(el => {
+                    el.style.display = 'none';
+                });
+        
+                // Show the selected payment method details
+                if (paymentMethod === 'credit_card') {
+                    document.getElementById('credit-card-details').style.display = 'block';
+        
+                    // Validate credit card number
+                    const cardNumberInput = document.getElementById('card-number');
+                    cardNumberInput.addEventListener('input', function (event) {
+                        const cardNumber = event.target.value.replace(/\D/g, ''); // Remove non-numeric characters
+                        const formattedCardNumber = formatCreditCardNumber(cardNumber);
+                        event.target.value = formattedCardNumber;
+                        validateCreditCard(cardNumber);
+                    });
+                } else if (paymentMethod === 'jazz_cash') {
+                    document.getElementById('jazz-cash-details').style.display = 'block';
+                } else if (paymentMethod === 'easy_paisa') {
+                    document.getElementById('easy-paisa-details').style.display = 'block';
+                }
+            }
+        
+            function formatCreditCardNumber(cardNumber) {
+                // Format card number with spaces for better readability
+                const formatted = cardNumber.replace(/\s+/g, '').replace(/(\d{4})/g, '$1 ').trim();
+                return formatted;
+            }
+        
+            function validateCreditCard(cardNumber) {
+                // Perform basic Luhn algorithm validation
+                const sanitized = cardNumber.replace(/\D/g, '');
+                if (/[^0-9-\s]+/.test(sanitized)) return false;
+        
+                let sum = 0;
+                let shouldDouble = false;
+                for (let i = sanitized.length - 1; i >= 0; i--) {
+                    let digit = parseInt(sanitized.charAt(i), 10);
+                    if (shouldDouble) {
+                        if ((digit *= 2) > 9) digit -= 9;
+                    }
+                    sum += digit;
+                    shouldDouble = !shouldDouble;
+                }
+                return (sum % 10) === 0;
+            }
+        
+            function submitFormViaWhatsApp() {
+    if (validateForm()) {
+        const form = document.getElementById('bookingForm');
+        const formData = new FormData(form);
+        const message = createBookingMessage(formData);
+
+        const whatsappNumber = '+923474508402'; // Replace with your WhatsApp number
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    }
+}
+
+        
+function createBookingMessage(formData) {
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const mobile = formData.get('mobile');
+    const bookingDate = formData.get('bookingDate');
+    const paymentMethod = formData.get('payment_method');
+    let paymentDetails = '';
+
+    // Include payment details based on payment method
+    if (paymentMethod === 'credit_card') {
+        paymentDetails = `\nCard Number: ${formData.get('card_number')}\nExpiry Date: ${formData.get('card_expiry')}\nCVV: ${formData.get('card_cvv')}`;
+    } else if (paymentMethod === 'jazz_cash') {
+        paymentDetails = `\nJazz Cash Number: ${formData.get('jazz_cash_number')}`;
+    } else if (paymentMethod === 'easy_paisa') {
+        paymentDetails = `\nEasy Paisa Number: ${formData.get('easy_paisa_number')}`;
+    }
+
+    const message = `Booking Details:\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}\nBooking Date: ${bookingDate}\nPayment Method: ${paymentMethod}${paymentDetails}`;
+
+    return message;
+}
+
+            function validateForm() {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const mobile = document.getElementById('mobile').value;
+                const bookingDate = document.getElementById('bookingDate').value;
+                const paymentMethod = document.getElementById('payment_method').value;
+        
+                if (!name || !email || !mobile || !bookingDate || !paymentMethod) {
+                    alert('Please fill in all required fields.');
+                    return false;
+                }
+        
+                return true;
+            }
+        
+            document.addEventListener('DOMContentLoaded', function () {
+                const bookingForm = document.getElementById('bookingForm');
+        
+                bookingForm.addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    submitFormViaWhatsApp();
+                });
+        
+                document.getElementById('payment_method').addEventListener('change', handlePaymentMethodChange);
+            });
+        
+            document.getElementById('mobile').addEventListener('input', function () {
+                this.value = this.value.replace(/[^+0-9]/g, '');
+                if (!this.value.startsWith('+92')) {
+                    this.value = '+92';
+                } else if (this.value.length > 13) {
+                    this.value = this.value.slice(0, 13);
+                }
+            });
+        
+            document.getElementById('jazz-cash-number').addEventListener('input', function () {
+                this.value = this.value.replace(/[^+0-9]/g, '');
+                if (!this.value.startsWith('+92')) {
+                    this.value = '+92';
+                } else if (this.value.length > 13) {
+                    this.value = this.value.slice(0, 13);
+                }
+            });
+        
+            document.getElementById('easy-paisa-number').addEventListener('input', function () {
+                this.value = this.value.replace(/[^+0-9]/g, '');
+                if (!this.value.startsWith('+92')) {
+                    this.value = '+92';
+                } else if (this.value.length > 13) {
+                    this.value = this.value.slice(0, 13);
+                }
+            });
+        </script>
+        
+<!-- <script>
+    function validateForm() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var mobile = document.getElementById('mobile').value;
+    var bookingDate = document.getElementById('bookingDate').value;
+    var paymentMethod = document.getElementById('paymentMethod').value;
+    var bookingTime = document.getElementById('bookingTime').value;
+    var guestCount = document.getElementById('guestCount').value;
+
+    if (name.trim() == "") {
+        alert("Please enter your Name");
+        return false;
+    }
+
+    if (email.trim() == "") {
+        alert("Please enter your Email");
+        return false;
+    }
+
+    if (mobile.trim() == "") {
+        alert("Please enter your Mobile number");
+        return false;
+    }
+
+    if (bookingDate.trim() == "") {
+        alert("Please select a Date");
+        return false;
+    }
+
+    if (paymentMethod.trim() == "") {
+        alert("Please select a Payment Method");
+        return false;
+    }
+
+    if (bookingTime.trim() == "") {
+        alert("Please select a Time");
+        return false;
+    }
+
+    if (guestCount.trim() == "Guest") {
+        alert("Please select number of Guests");
+        return false;
+    }
+
+    return true;
+}
+
+</script>
+     -->
+         
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

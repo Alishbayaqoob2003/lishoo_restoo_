@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>LISHOO-Restaurant</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="styles.css">
+      
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+   
+    <style>
+     
+      /* Centering the social icons */
+      
+     
+
+      
+
+
+/* === BASE HEADING === */ 
+
+h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+h1 em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* === HEADING STYLE #1 === */
+.one h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+}
+.one h1:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: #b80000;
+}
+.one h1:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #b80000;
+}
+      
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+      }
+      
+      .card {
+        width: auto;
+        margin: 5px;
+        position: relative;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+      
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      
+      .card-content {
+        padding: 20px;
+      }
+      
+      .card-content h2 {
+        margin-top: 0;
+        font-size: 20px;
+      }
+      
+      .card-content p {
+        margin-bottom: 0;
+        font-size: 14px;
+      }
+    ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        .footer-section {
+          background: #151414;
+          position: relative;
+        }    
+        .footer-cta {
+          border-bottom: 1px solid #373636;
+        }
+        .single-cta i {
+          color: #ff5e14;
+          font-size: 30px;
+          float: left;
+          margin-top: 8px;
+        }
+        .cta-text {
+          padding-left: 15px;
+          display: inline-block;
+        }
+        .cta-text h4 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 2px;
+        }
+        .cta-text span {
+          color: #757575;
+          font-size: 15px;
+        }
+        .footer-content {
+          position: relative;
+          z-index: 2;
+        }
+        .footer-pattern img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 330px;
+          background-size: cover;
+          background-position: 100% 100%;
+        }
+        .footer-logo {
+          margin-bottom: 30px;
+        }
+        .footer-logo img {
+            max-width: 200px;
+        }
+        .footer-text p {
+          margin-bottom: 14px;
+          font-size: 14px;
+              color: #7e7e7e;
+          line-height: 28px;
+        }
+        .footer-social-icon span {
+          color: #fff;
+          display: block;
+          font-size: 20px;
+          font-weight: 700;
+          font-family: 'Poppins', sans-serif;
+          margin-bottom: 20px;
+        }
+        .footer-social-icon a {
+          color: #fff;
+          font-size: 16px;
+          margin-right: 15px;
+        }
+        .footer-social-icon i {
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          line-height: 38px;
+          border-radius: 50%;
+        }
+        .facebook-bg{
+          background: #3B5998;
+        }
+        .twitter-bg{
+          background: #55ACEE;
+        }
+        .google-bg{
+          background: #DD4B39;
+        }
+        .footer-widget-heading h3 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 40px;
+          position: relative;
+        }
+        .footer-widget-heading h3::before {
+          content: "";
+          position: absolute;
+          left:50px;
+          bottom: -15px;
+          height: 2px;
+          width: 50px;
+          background: #ff5e14;
+        }
+        .footer-widget ul li {
+          display: inline-block;
+          float: left;
+          width: 50%;
+          margin-bottom: 12px;
+        }
+        .footer-widget ul li a:hover{
+          color: #ff5e14;
+        }
+        .footer-widget ul li a {
+          color: #878787;
+          text-transform: capitalize;
+        }
+        .subscribe-form {
+          position: relative;
+          overflow: hidden;
+        }
+        .subscribe-form input {
+          width: 100%;
+          padding: 14px 28px;
+          background: #2E2E2E;
+          border: 1px solid #2E2E2E;
+          color: #fff;
+        }
+        .subscribe-form button {
+            position: absolute;
+            right: 0;
+            background: #ff5e14;
+            padding: 13px 20px;
+            border: 1px solid #ff5e14;
+            top: 0;
+        }
+        .subscribe-form button i {
+          color: #fff;
+          font-size: 22px;
+          transform: rotate(-6deg);
+        }
+        .copyright-area{
+          background: #202020;
+          padding: 25px 0;
+        }
+        .copyright-text p {
+          margin: 0;
+          font-size: 14px;
+          color: #878787;
+        }
+        .copyright-text p a{
+          color: #ff5e14;
+        }
+        .footer-menu li {
+          display: inline-block;
+          margin-left: 20px;
+        }
+        .footer-menu li:hover a{
+          color: #ff5e14;
+        }
+        .footer-menu li a {
+          font-size: 14px;
+          color: #878787;
+        }
+        /* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Navigation Styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+/* About Section Styling */
+.about-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-section h1, .about-section h2 {
+  text-align: center;
+  color: #333;
+}
+
+.about-section p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.chef {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.chef img {
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.chef-info {
+  flex: 1;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+</style>
+<style>/* Reset default margin and padding */
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Centering the social icons */
+  .social-icons {
+    display: flex;
+    flex-direction: column; /* Display icons in a column */
+    align-items: center; /* Center align icons horizontally */
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  /* Styling for each social icon link */
+  .social-icon {
+    display: inline-block;
+    margin: 10px 0; /* Adjust spacing between icons vertically */
+    font-size: 20px; /* Adjust icon size */
+    color: #333; /* Adjust icon color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  /* Hover effect for social icons */
+  .social-icon:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  /* Facebook icon */
+  .social-icon.facebook:hover {
+    color: #3b5998; /* Facebook blue */
+  }
+  
+  /* Twitter icon */
+  .social-icon.twitter:hover {
+    color: #1da1f2; /* Twitter blue */
+  }
+  
+  /* Instagram icon */
+  .social-icon.instagram:hover {
+    color: #e1306c; /* Instagram pink */
+  }
+  
+  /* WhatsApp icon */
+  .social-icon.whatsapp:hover {
+    color: #25d366; /* WhatsApp green */
+  }
+  
+  /* Font Awesome icons */
+  .fa {
+    font-size: inherit;
+  }
+  .social-links h2{
+padding-bottom: 15px;
+font-size: 20px;
+font-weight: 600;
+}
+.social-links img{
+padding-bottom: 25px;
+}
+.social-icons{
+/* display: flex;
+gap: 3rem; */
+display: flex;
+flex-direction: column;
+gap: 1rem;
+color: #777777;
+}
+.social-icons a{
+/* font-size: 18px; */
+/* background: #ffffff; */
+/* box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+padding: 0.4rem 1rem 0.4rem 1rem;
+border-radius: 3px;
+color: #82074a; */
+/* margin-right: 18px; */
+color: #777777;
+}
+.social-icons a:hover{
+color: #000;
+}
+.social-icons a i{
+box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+padding: 0.4rem 1rem 0.4rem 1rem;
+border-radius: 3px;
+color: #ede4e9;
+font-size: 16px;
+margin-right: 12px;
+}
+li{
+list-style: none;
+}
+.useful-link h2{
+padding-bottom: 15px;
+font-size: 20px;
+font-weight: 600;
+}
+.useful-link img{
+padding-bottom: 15px;
+}
+.use-links{
+line-height: 32px;
+}
+.use-links li i{
+font-size: 14px;
+padding-right: 8px;
+color: #898989;
+}
+.use-links li a{
+color: #303030;
+font-size: 15px;
+font-weight: 500;
+color: #777777;
+}
+.use-links li a:hover{
+color: #000;
+}
+.address h2{
+padding-bottom: 15px;
+font-size: 20px;
+font-weight: 600;
+}
+.address img{
+padding-bottom: 15px;
+}
+.address-links li a{
+color: #303030;
+font-size: 15px;
+font-weight: 500;
+color: #777777;
+
+}
+.address-links li i{
+font-size: 16px;
+padding-right: 8px;
+color: #f4edf1;
+
+}
+.address-links li i:nth-child(1){
+padding-top: 9px;
+}
+.address-links .address1{
+font-weight: 500;
+font-size: 15px;
+display: flex;
+}
+.address-links{
+  line-height: 32px;
+  color: #777777;
+}
+.copy-right-sec{
+padding: 1.8rem;
+background: #fbf9fa;
+color: #fff;
+text-align: center;
+}
+.copy-right-sec a{
+color: #fcd462;
+font-weight: 500;
+}
+a{
+text-decoration:none;
+}
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+</style>
+
+        
+   
+    </head>
+    
+
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Lishoo <span>Resto</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="./index.html" class="nav-item nav-link active">Home</a>
+                        <a href="./about.html" class="nav-item nav-link">About</a>
+                        <a href="./feature.html" class="nav-item nav-link">Feature</a>
+                        <a href="./menu.html" class="nav-item nav-link">Menu</a>
+                       
+                        <a href="./booking.html" class="nav-item nav-link">Booking</a>
+                     
+                        <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="carousel">
+            <div class="container-fluid">
+                <div class="owl-carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="pic11.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-text">
+                            <h1>Welcome<span>To The</span>Lishoo Restoo</h1>
+                            
+                                
+                                <div class="carousel-btn">
+                                    <a class="btn custom-btn" href="./menu.html">Menu Card</a>
+                                    <a class="btn custom-btn" href="./booking.html">Booking </a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="pic12.jpg">
+                        </div>
+                        <div class="carousel-text">
+                            <h1> Enjoy<span> Fast </span> Food</h1>
+                           
+                            <div class="carousel-btn">
+                                <a class="btn custom-btn" href="./menu.html">Menu Card</a>
+                                <a class="btn custom-btn" href="./booking.html">Booking </a>
+                            </div>
+                        
+                        
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+        
+        <!-- Video Modal Start-->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>        
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="one">
+            <h1 style=" color: #fba747;
+            font-size: 50px !important;
+            text-align: center;
+            font-family: fantasy;">Special Deals</h1>
+          </div>
+            <div class="container">
+              <div class="menu ">
+                <div class="card ">
+                  <img src="img/deals13.PNG" alt="Dish 1">
+                  <div class="card-content">
+                    <h2>Dish 1</h2>
+                    <p> 1.</p>
+                  </div>
+                </div>
+                <div class="card ">
+                  <img src="img/deals155.PNG" alt="Dish 2">
+                  <div class="card-content">
+                    <h2>Dish 2</h2>
+                    <p> 2.</p>
+                  </div>
+                </div>
+                <div class="card ">
+                  <img src="img/mn.PNG" alt="Dish 3">
+                  <div class="card-content">
+                    <h2>Dish 3</h2>
+                    <p> 3.</p>
+                  </div>
+                </div>
+                <div class="card ">
+                    <img src="img/n33.PNG" alt="Dish 3">
+                    <div class="card-content">
+                      <h2>Dish 3</h2>
+                      <p> 4.</p>
+                    </div>
+                  </div>
+                  
+                  
+              </div>
+            </div>
+            <div class="">
+              <h1 style="
+              font-size: 50px !important;
+              text-align: center;
+              font-family: fantasy;"></h1>
+            </div>
+   
+  
+       
+  
+              <div class="container">
+                <div class="menu ">
+                  <div class="card ">
+                    <img src="img/kl.jpeg" alt="Dish 1">
+                    <div class="card-content">
+                      <h2>Dish 1</h2>
+                      <p>Description of Dish 1.</p>
+                    </div>
+                  </div>
+                  <div class="card ">
+                    <img src="img/99.PNG" alt="Dish 2">
+                    <div class="card-content">
+                      <h2>Dish 2</h2>
+                      <p>Description of Dish 2.</p>
+                    </div>
+                  </div>
+                  <div class="card ">
+                    <img src="img/deals12.PNG" alt="Dish 3">
+                    <div class="card-content">
+                      <h2>Dish 3</h2>
+                      <p>Description of Dish 3.</p>
+                    </div>
+                  </div>
+                  <div class="card ">
+                      <img src="img/n33.PNG"Dish 3">
+                      <div class="card-content">
+                        <h2>Dish 3</h2>
+                        <p>Description of Dish 3.</p>
+                      </div>
+                    </div>
+                    
+                    
+                </div>
+              </div>
+              <div class="">
+                <h1 style=" 
+                font-size: 50px !important;
+                text-align: center;
+                font-family: fantasy;"></h1>
+              </div>
+     
+          
+              <footer class="footer-section">
+                <div class="container">
+                    <div class="footer-cta pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="cta-text">
+                                        <h4>Find us</h4>
+                                        <span>Mirpur azad kashmir</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Call us</h4>
+                                        <span>+923474508402</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>Mail us</h4>
+                                        <p> <a href="mailto:alishbayaqoob2003@gmail.com"
+                                            title="glorythemes">alishbayaqoob2003@gmail.com</a></p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 mb-50">
+                                <div class="footer-widget">
+                                    <div class="footer-logo">
+                                        <a href="index.html">
+                                            <img style="border-radius: 20%;" src="img/lishoo resturent logo.PNG"  alt="logoo"></a>
+                                    </div>
+                                    <div class="footer-text">
+                                     
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Useful Links</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="./index.html">Home</a></li>
+                                        <li><a href="./About.html">About</a></li>
+                                        <li><a href="./feature.html">Features</a></li>
+                                        <li><a href="./Menu.html">Menu</a></li>
+                                        <li><a href="./Booking.html">Booking</a></li>
+                                        <li><a href="./contact.html">Contact us</a></li>
+                                        
+                                
+                                        
+                                    </ul>
+    
+                                </div> 
+                            </div>
+                            
+                            <div class="footer-widget-heading">
+                                <h3>Follow us</h3>
+                               
+                          
+                            
+                        <div class="social-icons">
+                          <a href="https://www.instagram.com/lishoo_restoo?igsh=MWh4NDR3a2xycDc=" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                          </a>
+                          <a href="https://www.facebook.com/profile.php?id=61561985914413&mibextid=ZbWKwL" target="_blank" class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                          </a>
+                          <a
+                           href="https://wa.me/923474508402?text=Hello,%20I%20have%20a%20question%20about%20your%20menu" target="_blank" class="social-icon whatsapp">
+                           <i class="fab fa-whatsapp"></i> WhatsApp
+                          </a>
+                          <!-- Add more social icons as needed -->
+                        </div>
+                             
+                              </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                       
+                <div class="footer-copyright">
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-12 text-center">
+                    <p> Designed by Lishoo Team. All rights reserved.</p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+            </footer>
+    
+        
+         
+    
+                
+                   
+    
+                                        
+                            
+                               
+                            
+                        
+            
+           
+        
+           
+            
+            
+        
+        
+        
+                    
+        
+        
+        
+        
+        
+        
+
+
+       
+                                
+                      
+        
+
+       
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
